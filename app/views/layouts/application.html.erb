@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsWikinimous</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="d-flex justify-content-between header">
+      <%= link_to articles_path do %>
+        <h4>Wikinimous</h4>
+      <% end %>
+      <%= link_to("New Article", new_article_path) %>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

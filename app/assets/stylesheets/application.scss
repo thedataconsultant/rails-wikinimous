@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ $fa-font-path: '@fortawesome/fontawesome-free/webfonts';
+ @import '@fortawesome/fontawesome-free/scss/fontawesome';
+ @import '@fortawesome/fontawesome-free/scss/solid';
+ @import '@fortawesome/fontawesome-free/scss/regular';
+ @import '@fortawesome/fontawesome-free/scss/brands';
+ @import '@fortawesome/fontawesome-free/scss/v4-shims';
+ @import "bootstrap/scss/bootstrap";
+
+
+h1, h2, h3, h4, {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+}
+
+.header{
+  background-color: rgb(240, 240, 240);
+  border: 1px lightgray solid;
+  margin-bottom: 15px;
+
+  a{
+    color: gray;
+  }
+}
+
+.container{
+  li{
+    list-style: none;
+    padding-bottom: 10px;
+  }
+  h2{
+    color: #337ab7;
+    font-size: 28px;
+
+  }
+  .article{
+    vertical-align: baseline;
+
+    h1, h2, h3, h4 {
+      color: black;
+      font-size: 32px;
+    }
+    i{
+      padding-left: 10px;
+      color: #337ab7;
+      font-size: 20px;
+    }
+  }
+}
+
+br{
+  color: gray;
+}
+
+

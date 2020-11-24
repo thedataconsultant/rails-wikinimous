@@ -1,0 +1,15 @@
+<div class="container">
+  <div class = "d-flex justify-content-start align-items-center article">
+    <h2><%= @article.title %></h2>
+    <%= link_to edit_article_path do %>
+      <i class="far fa-edit"></i>
+    <% end %>
+    <%= link_to article_path(@article.id), method: :delete, data: {confirm: "Are you sure?"} do %>
+      <i class="fas fa-trash"></i>
+    <% end %>
+  </div>
+  <hr>
+
+
+  <p><%= @article.content %></p>
+</div>
